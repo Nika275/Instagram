@@ -1,7 +1,3 @@
-
-
-
-
 public class Username {
     private String username;
 
@@ -47,83 +43,6 @@ public class Password {
     }
 }
 
-public class Content {
-    private String data;
-
-    public Content(String data) {
-        if (data == null || data.isEmpty()) {
-            throw new IllegalArgumentException("Content cannot be null or empty");
-        }
-        this.data = data;
-    }
-
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        if (data == null || data.isEmpty()) {
-            throw new IllegalArgumentException("Content cannot be null or empty");
-        }
-        this.data = data;
-    }
-}
-
-public class Reaction {
-    private int reactionID;
-    private String type;
-    private int contentID;
-    private int userID;
-    private Date createdAt;
-
-    public Reaction(int reactionID, String type, int contentID, int userID, Date createdAt) {
-        this.reactionID = reactionID;
-        this.type = type;
-        this.contentID = contentID;
-        this.userID = userID;
-        this.createdAt = createdAt;
-    }
-
-    public int getReactionID() {
-        return reactionID;
-    }
-
-    public void setReactionID(int reactionID) {
-        this.reactionID = reactionID;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public int getContentID() {
-        return contentID;
-    }
-
-    public void setContentID(int contentID) {
-        this.contentID = contentID;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-}
 
 public class UserAggregate {
     private User user;
